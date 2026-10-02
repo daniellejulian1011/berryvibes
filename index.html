@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#6e46ff"><meta name="description" content="Berry Vibes Studio — playful multi-page Cozy Core Diet website.">
+<title>TODAY, BUT MAKE IT BERRY. · Berry Vibes Studio</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@500;600;700;800&family=Playfair+Display:ital,wght@0,700;1,700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css"></head>
+<body data-page="index">
+<div class="grain" aria-hidden="true"></div><div class="cursor-glow" id="cursorGlow" aria-hidden="true"></div>
+<header class="rail topbar kinetic-topbar">
+  <a class="brand-lockup" href="index.html" aria-label="Berry Vibes Studio home"><span class="berry-mark">BV</span><span><b>BERRY VIBES</b><small>CCD × DESIGN STUDIO</small></span></a>
+  <nav class="rail-nav" aria-label="Website pages"><a class="nav-link active" href="index.html"><span>✨</span><b>TODAY</b></a><a class="nav-link " href="foods.html"><span>🍽️</span><b>FOOD</b></a><a class="nav-link " href="recipes.html"><span>🧪</span><b>RECIPES</b></a><a class="nav-link " href="movement.html"><span>🚶🏽‍♀️</span><b>MOVE</b></a><a class="nav-link " href="fasting.html"><span>⏳</span><b>FAST</b></a><a class="nav-link " href="restaurants.html"><span>🍟</span><b>EAT OUT</b></a><a class="nav-link " href="battle.html"><span>🏆</span><b>BATTLE</b></a><a class="nav-link " href="shop.html"><span>🛍️</span><b>SHOP</b></a><a class="nav-link " href="facts.html"><span>💬</span><b>FACTS</b></a><a class="nav-link " href="about.html"><span>🎨</span><b>ABOUT</b></a><a class="nav-link " href="profile.html"><span>👤</span><b>PROFILE</b></a></nav>
+  <div class="rail-foot"><a class="cart-mini" href="checkout.html" title="Checkout">🛒</a><button class="ghost-button compact" data-signout>↪ SIGN OUT</button></div>
+</header>
+<main class="page-shell">
+  <header class="page-top"><div><span class="eyebrow" data-greeting>HELLO ✨</span><h1>TODAY, BUT MAKE IT BERRY.</h1><p>A focused dashboard — not a landing page. Your food, movement, water, fasting and next moves live here.</p></div><div class="profile-chip" data-profile-chip><span>🍓</span><b>BERRY PROFILE</b></div></header>
+  
+<section class="hero-panel dashboard-hero tilt-card"><div><span class="mini-kicker">DAILY BERRY BOARD</span><h2>YOUR DAY AT A GLANCE.</h2><p>Tap into another page when you want to log, build, compare, shop or customize. Nothing is crammed into one mega-page.</p></div><div class="orbit-badge"><span>✦</span><b id="todayDate">TODAY</b><small id="todayTime">--:--</small></div></section>
+
+<section class="kinetic-playground panel" id="kineticPlayground">
+  <div class="kinetic-copy"><span class="mini-kicker">PLAYABLE · NOT A GAME</span><h2>DRAG THE BERRY ORB.</h2><p>Move the orb around the board, tap a portal, or click the background for tiny sparkle bursts. It is pure interaction — no Berry Burst game.</p></div>
+  <div class="orbit-board" id="orbitBoard" aria-label="Interactive draggable Berry Vibes orb"><button id="draggableBerry" class="draggable-berry" aria-label="Drag the berry orb">🍓<span>DRAG ME</span></button><i class="orbit-ring ring-a"></i><i class="orbit-ring ring-b"></i><i class="orbit-dot dot-a">✦</i><i class="orbit-dot dot-b">🫐</i><i class="orbit-dot dot-c">🍒</i></div>
+</section>
+<section class="stat-grid" id="dashboardStats"></section>
+<section class="split-grid"><article class="panel"><div class="section-head"><div><span class="mini-kicker">HORIZONTAL MACRO TRACKER</span><h2>FOOD TOTALS</h2></div><span class="pill">2,100–2,150 KCAL REFERENCE</span></div><div id="macroBars" class="bars"></div><div class="maintenance-strip"><div><b id="maintenanceText">NO FOOD LOGGED YET.</b><small>MOVEMENT BURN STAYS SEPARATE.</small></div><div class="track"><span id="maintenanceFill"></span></div></div></article>
+<article class="panel"><div class="section-head"><div><span class="mini-kicker">HORIZONTAL FOOD PYRAMID</span><h2>DAY MIX</h2></div><span class="pill mint">AUTO-SORTED</span></div><div id="pyramidBars" class="bars"></div></article></section>
+<section class="panel"><div class="section-head"><div><span class="mini-kicker">AUTOMATIC CLICK-TIME LOGS</span><h2>RECENT ACTIVITY</h2></div><button class="ghost-button" id="clearToday">CLEAR TODAY</button></div><div id="recentLogs" class="log-list"></div></section>
+<section class="panel choice-panel"><div class="section-head"><div><span class="mini-kicker">5 MULTIPLE CHOICES</span><h2>WHAT'S NEXT?</h2></div><span class="pill coral">PICK A PORTAL</span></div><div class="choice-grid"><a href="foods.html">A · LOG FOOD 🍽️</a><a href="recipes.html">B · BUILD A RECIPE 🧪</a><a href="movement.html">C · LOG MOVEMENT 🚶🏽‍♀️</a><a href="battle.html">D · START A BATTLE 🏆</a><a href="shop.html">E · BROWSE DESIGNS 🛍️</a></div></section>
+
+  <footer class="make-footer"><span>🍓 ✦ 🫐 ✦ 🍒</span><strong>LET'S MAKE... 😋😍😎</strong></footer>
+</main>
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+<script src="script.js"></script></body></html>

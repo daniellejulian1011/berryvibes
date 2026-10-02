@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#6e46ff"><meta name="description" content="Berry Vibes Studio — playful multi-page Cozy Core Diet website.">
+<title>MAKE THE WEBSITE YOURS. · Berry Vibes Studio</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@500;600;700;800&family=Playfair+Display:ital,wght@0,700;1,700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css"></head>
+<body data-page="profile">
+<div class="grain" aria-hidden="true"></div><div class="cursor-glow" id="cursorGlow" aria-hidden="true"></div>
+<header class="rail topbar kinetic-topbar">
+  <a class="brand-lockup" href="index.html" aria-label="Berry Vibes Studio home"><span class="berry-mark">BV</span><span><b>BERRY VIBES</b><small>CCD × DESIGN STUDIO</small></span></a>
+  <nav class="rail-nav" aria-label="Website pages"><a class="nav-link " href="index.html"><span>✨</span><b>TODAY</b></a><a class="nav-link " href="foods.html"><span>🍽️</span><b>FOOD</b></a><a class="nav-link " href="recipes.html"><span>🧪</span><b>RECIPES</b></a><a class="nav-link " href="movement.html"><span>🚶🏽‍♀️</span><b>MOVE</b></a><a class="nav-link " href="fasting.html"><span>⏳</span><b>FAST</b></a><a class="nav-link " href="restaurants.html"><span>🍟</span><b>EAT OUT</b></a><a class="nav-link " href="battle.html"><span>🏆</span><b>BATTLE</b></a><a class="nav-link " href="shop.html"><span>🛍️</span><b>SHOP</b></a><a class="nav-link " href="facts.html"><span>💬</span><b>FACTS</b></a><a class="nav-link " href="about.html"><span>🎨</span><b>ABOUT</b></a><a class="nav-link active" href="profile.html"><span>👤</span><b>PROFILE</b></a></nav>
+  <div class="rail-foot"><a class="cart-mini" href="checkout.html" title="Checkout">🛒</a><button class="ghost-button compact" data-signout>↪ SIGN OUT</button></div>
+</header>
+<main class="page-shell">
+  <header class="page-top"><div><span class="eyebrow" data-greeting>HELLO ✨</span><h1>MAKE THE WEBSITE YOURS.</h1><p>Edit your profile, profile photo, height, weight, reason for using Berry Vibes, theme palette, and accent color. Changes save in this browser.</p></div><div class="profile-chip" data-profile-chip><span>🍓</span><b>BERRY PROFILE</b></div></header>
+  
+<section class="profile-layout"><article class="panel profile-card"><div class="profile-photo" id="profilePreview">🍓</div><label class="upload-button">CHANGE PROFILE PIC<input id="profilePic" type="file" accept="image/*" hidden></label><div class="profile-mini" id="profileMini">BERRY PROFILE</div></article><article class="panel"><div class="section-head"><div><span class="mini-kicker">EDITABLE PROFILE</span><h2>PROFILE DETAILS</h2></div></div><form id="profileForm" class="profile-form"><label>DISPLAY NAME<input class="control" id="profileName" maxlength="32" placeholder="DANIELLE"></label><div class="two-fields"><label>HEIGHT<input class="control" id="profileHeight" placeholder="5'2\""></label><label>WEIGHT (LB)<input class="control" id="profileWeight" type="number" min="60" max="400" step="0.1" placeholder="118"></label></div><label>WHY ARE YOU USING BERRY VIBES?<textarea class="control" id="profileReason" rows="3" placeholder="RECIPES, DAILY LOGGING, CREATIVE FUN..."></textarea></label><button class="primary-button" type="submit">SAVE PROFILE ✦</button></form></article></section>
+<section class="panel"><div class="section-head"><div><span class="mini-kicker">WEBSITE COLOR STYLE</span><h2>THEME CLOSET</h2></div><span class="pill coral">LIVE PREVIEW</span></div><div class="theme-grid" id="themeGrid"></div><div class="accent-row"><label>ACCENT COLOR<input id="accentColor" type="color" value="#6e46ff"></label><button class="ghost-button" id="resetTheme">RESET THEME</button></div></section>
+
+  <footer class="make-footer"><span>🍓 ✦ 🫐 ✦ 🍒</span><strong>LET'S MAKE... 😋😍😎</strong></footer>
+</main>
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+<script src="script.js"></script></body></html>

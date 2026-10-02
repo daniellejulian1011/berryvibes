@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#6e46ff"><meta name="description" content="Berry Vibes Studio — playful multi-page Cozy Core Diet website.">
+<title>FOOD COMPARISON BATTLE. · Berry Vibes Studio</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@500;600;700;800&family=Playfair+Display:ital,wght@0,700;1,700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css"></head>
+<body data-page="battle">
+<div class="grain" aria-hidden="true"></div><div class="cursor-glow" id="cursorGlow" aria-hidden="true"></div>
+<header class="rail topbar kinetic-topbar">
+  <a class="brand-lockup" href="index.html" aria-label="Berry Vibes Studio home"><span class="berry-mark">BV</span><span><b>BERRY VIBES</b><small>CCD × DESIGN STUDIO</small></span></a>
+  <nav class="rail-nav" aria-label="Website pages"><a class="nav-link " href="index.html"><span>✨</span><b>TODAY</b></a><a class="nav-link " href="foods.html"><span>🍽️</span><b>FOOD</b></a><a class="nav-link " href="recipes.html"><span>🧪</span><b>RECIPES</b></a><a class="nav-link " href="movement.html"><span>🚶🏽‍♀️</span><b>MOVE</b></a><a class="nav-link " href="fasting.html"><span>⏳</span><b>FAST</b></a><a class="nav-link " href="restaurants.html"><span>🍟</span><b>EAT OUT</b></a><a class="nav-link active" href="battle.html"><span>🏆</span><b>BATTLE</b></a><a class="nav-link " href="shop.html"><span>🛍️</span><b>SHOP</b></a><a class="nav-link " href="facts.html"><span>💬</span><b>FACTS</b></a><a class="nav-link " href="about.html"><span>🎨</span><b>ABOUT</b></a><a class="nav-link " href="profile.html"><span>👤</span><b>PROFILE</b></a></nav>
+  <div class="rail-foot"><a class="cart-mini" href="checkout.html" title="Checkout">🛒</a><button class="ghost-button compact" data-signout>↪ SIGN OUT</button></div>
+</header>
+<main class="page-shell">
+  <header class="page-top"><div><span class="eyebrow" data-greeting>HELLO ✨</span><h1>FOOD COMPARISON BATTLE.</h1><p>Pick two CCD foods, choose the battle rule, then launch the showdown. The winner is based only on the visible metric you selected.</p></div><div class="profile-chip" data-profile-chip><span>🍓</span><b>BERRY PROFILE</b></div></header>
+  
+<section class="battle-stage panel"><div class="battle-controls"><div><label>PLAYER A<select class="control" id="battleA"></select></label></div><div class="versus">VS</div><div><label>PLAYER B<select class="control" id="battleB"></select></label></div></div><div class="battle-mode"><button data-battle-mode="protein" class="active">💪🏽 PROTEIN POWER</button><button data-battle-mode="fiber">🌾 FIBER FLEX</button><button data-battle-mode="calories">🔥 LOWER CALORIES</button><button data-battle-mode="density">✨ PROTEIN + FIBER / 100 KCAL</button></div><button class="primary-button battle-launch" id="battleLaunch">LAUNCH BATTLE 🏆</button><div id="battleArena" class="battle-arena"></div></section>
+<section class="panel"><div class="section-head"><div><span class="mini-kicker">HORIZONTAL COMPARISON</span><h2>BATTLE BREAKDOWN</h2></div><span class="pill coral">TRANSPARENT RULES</span></div><div id="battleBars" class="bars"></div></section>
+
+  <footer class="make-footer"><span>🍓 ✦ 🫐 ✦ 🍒</span><strong>LET'S MAKE... 😋😍😎</strong></footer>
+</main>
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+<script src="script.js"></script></body></html>

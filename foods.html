@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#6e46ff"><meta name="description" content="Berry Vibes Studio — playful multi-page Cozy Core Diet website.">
+<title>FOOD + SOTD LOGBOOK. · Berry Vibes Studio</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@500;600;700;800&family=Playfair+Display:ital,wght@0,700;1,700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css"></head>
+<body data-page="foods">
+<div class="grain" aria-hidden="true"></div><div class="cursor-glow" id="cursorGlow" aria-hidden="true"></div>
+<header class="rail topbar kinetic-topbar">
+  <a class="brand-lockup" href="index.html" aria-label="Berry Vibes Studio home"><span class="berry-mark">BV</span><span><b>BERRY VIBES</b><small>CCD × DESIGN STUDIO</small></span></a>
+  <nav class="rail-nav" aria-label="Website pages"><a class="nav-link " href="index.html"><span>✨</span><b>TODAY</b></a><a class="nav-link active" href="foods.html"><span>🍽️</span><b>FOOD</b></a><a class="nav-link " href="recipes.html"><span>🧪</span><b>RECIPES</b></a><a class="nav-link " href="movement.html"><span>🚶🏽‍♀️</span><b>MOVE</b></a><a class="nav-link " href="fasting.html"><span>⏳</span><b>FAST</b></a><a class="nav-link " href="restaurants.html"><span>🍟</span><b>EAT OUT</b></a><a class="nav-link " href="battle.html"><span>🏆</span><b>BATTLE</b></a><a class="nav-link " href="shop.html"><span>🛍️</span><b>SHOP</b></a><a class="nav-link " href="facts.html"><span>💬</span><b>FACTS</b></a><a class="nav-link " href="about.html"><span>🎨</span><b>ABOUT</b></a><a class="nav-link " href="profile.html"><span>👤</span><b>PROFILE</b></a></nav>
+  <div class="rail-foot"><a class="cart-mini" href="checkout.html" title="Checkout">🛒</a><button class="ghost-button compact" data-signout>↪ SIGN OUT</button></div>
+</header>
+<main class="page-shell">
+  <header class="page-top"><div><span class="eyebrow" data-greeting>HELLO ✨</span><h1>FOOD + SOTD LOGBOOK.</h1><p>Browse the recovered CCD archive, sweet + savory + Sunday home-cooked entries, snack-of-the-day presets, and water — with no manual macro typing.</p></div><div class="profile-chip" data-profile-chip><span>🍓</span><b>BERRY PROFILE</b></div></header>
+  
+<section class="panel"><div class="section-head"><div><span class="mini-kicker">220+ RECOVERED FOOD / CCD ENTRIES</span><h2>FOOD VAULT</h2></div><span class="pill">AUTO NUTRITION</span></div><div class="filter-row"><input class="control" id="foodSearch" placeholder="SEARCH PANCAKES, PHILLY, SUNDAY, CHOCOLATE..."><select class="control" id="foodGroup"><option value="all">ALL WORLDS</option></select></div><div class="card-grid food-grid" id="foodGrid"></div><button class="wide-button" id="loadMoreFood">SHOW MORE FOOD CARDS ✦</button></section>
+<section class="split-grid"><article class="panel sotd-zone"><div class="section-head"><div><span class="mini-kicker">SNACK OF THE DAY · NO MACRO ENTRY</span><h2>SOTD DECK</h2></div><span class="pill coral">17 PRESETS</span></div><div id="sotdGrid" class="sotd-grid"></div></article><article class="panel"><div class="section-head"><div><span class="mini-kicker">WATER QUICK LOG</span><h2>HYDRATION</h2></div><span class="pill mint" id="waterTotal">0 OZ</span></div><div class="water-visual"><div class="water-orb" id="waterOrb"><b>0</b><span>OZ</span></div><div class="water-actions"><button data-water="8">+ 8 OZ</button><button data-water="12">+ 12 OZ</button><button data-water="16.9">+ 16.9 OZ</button><button data-water="24">+ 24 OZ</button></div></div></article></section>
+<dialog id="foodDialog" class="dialog"><button class="dialog-x" data-close-dialog>×</button><div id="foodDialogBody"></div></dialog>
+
+  <footer class="make-footer"><span>🍓 ✦ 🫐 ✦ 🍒</span><strong>LET'S MAKE... 😋😍😎</strong></footer>
+</main>
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+<script src="script.js"></script></body></html>
