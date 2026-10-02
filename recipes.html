@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#6e46ff"><meta name="description" content="Berry Vibes Studio — playful multi-page Cozy Core Diet website.">
+<title>CCD RECIPE LAB. · Berry Vibes Studio</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@500;600;700;800&family=Playfair+Display:ital,wght@0,700;1,700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css"></head>
+<body data-page="recipes">
+<div class="grain" aria-hidden="true"></div><div class="cursor-glow" id="cursorGlow" aria-hidden="true"></div>
+<header class="rail topbar kinetic-topbar">
+  <a class="brand-lockup" href="index.html" aria-label="Berry Vibes Studio home"><span class="berry-mark">BV</span><span><b>BERRY VIBES</b><small>CCD × DESIGN STUDIO</small></span></a>
+  <nav class="rail-nav" aria-label="Website pages"><a class="nav-link " href="index.html"><span>✨</span><b>TODAY</b></a><a class="nav-link " href="foods.html"><span>🍽️</span><b>FOOD</b></a><a class="nav-link active" href="recipes.html"><span>🧪</span><b>RECIPES</b></a><a class="nav-link " href="movement.html"><span>🚶🏽‍♀️</span><b>MOVE</b></a><a class="nav-link " href="fasting.html"><span>⏳</span><b>FAST</b></a><a class="nav-link " href="restaurants.html"><span>🍟</span><b>EAT OUT</b></a><a class="nav-link " href="battle.html"><span>🏆</span><b>BATTLE</b></a><a class="nav-link " href="shop.html"><span>🛍️</span><b>SHOP</b></a><a class="nav-link " href="facts.html"><span>💬</span><b>FACTS</b></a><a class="nav-link " href="about.html"><span>🎨</span><b>ABOUT</b></a><a class="nav-link " href="profile.html"><span>👤</span><b>PROFILE</b></a></nav>
+  <div class="rail-foot"><a class="cart-mini" href="checkout.html" title="Checkout">🛒</a><button class="ghost-button compact" data-signout>↪ SIGN OUT</button></div>
+</header>
+<main class="page-shell">
+  <header class="page-top"><div><span class="eyebrow" data-greeting>HELLO ✨</span><h1>CCD RECIPE LAB.</h1><p>Search the recovered cookbook, open recipe cards, scale servings, inspect a vertical ingredient chart, and build new recipes with automatic ingredient nutrition.</p></div><div class="profile-chip" data-profile-chip><span>🍓</span><b>BERRY PROFILE</b></div></header>
+  
+<section class="panel"><div class="section-head"><div><span class="mini-kicker">RECOVERED COOKBOOK</span><h2>RECIPE LIBRARY</h2></div><span class="pill">SEARCH + FILTER</span></div><div class="filter-row"><input class="control" id="recipeSearch" placeholder="SEARCH THE CCD ARCHIVE..."><select class="control" id="recipeGroup"><option value="all">ALL CCD WORLDS</option></select><button class="ghost-button" id="randomRecipe">SURPRISE ME ✦</button></div><div class="card-grid recipe-grid" id="recipeGrid"></div><button class="wide-button" id="loadMoreRecipes">SHOW MORE RECIPES ✦</button></section>
+<section class="lab-layout"><article class="panel lab-panel"><div class="section-head"><div><span class="mini-kicker">PLAYABLE RECIPE BUILDER</span><h2>BUILD A CCD CARD</h2></div><span class="pill coral">AUTO CALCULATED</span></div><label class="field">RECIPE NAME<input class="control" id="builderName" placeholder="MY NEW CCD RECIPE"></label><div class="builder-add"><select class="control" id="pantrySelect"></select><input type="range" id="pantryAmount" min="0.25" max="8" step="0.25" value="1"><output id="pantryAmountOut">1×</output><button class="primary-button" id="addIngredient">ADD INGREDIENT +</button></div><div id="builderIngredients" class="ingredient-stack"></div><div class="nutrition-ribbon" id="builderNutrition"></div><div class="button-row"><button class="primary-button" id="saveRecipe">SAVE RECIPE ✦</button><button class="ghost-button" id="clearBuilder">CLEAR</button></div></article>
+<article class="panel"><div class="section-head"><div><span class="mini-kicker">TSP · TBSP · CUP</span><h2>UNIT NUTRITION LAB</h2></div></div><select class="control" id="unitIngredient"></select><div class="unit-switch" id="unitSwitch"><button data-unit="tsp" class="active">TSP</button><button data-unit="tbsp">TBSP</button><button data-unit="cup">CUP</button></div><input type="range" id="unitAmount" min="0.25" max="4" step="0.25" value="1"><div class="nutrition-ribbon" id="unitNutrition"></div><div id="unitReference" class="unit-reference"></div></article></section>
+<dialog id="recipeDialog" class="dialog recipe-dialog"><button class="dialog-x" data-close-dialog>×</button><div id="recipeDialogBody"></div></dialog>
+
+  <footer class="make-footer"><span>🍓 ✦ 🫐 ✦ 🍒</span><strong>LET'S MAKE... 😋😍😎</strong></footer>
+</main>
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+<script src="script.js"></script></body></html>
