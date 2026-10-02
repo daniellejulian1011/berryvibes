@@ -1,0 +1,11 @@
+name = "berry-restaurant-api"
+main = "restaurant-worker.js"
+compatibility_date = "2026-10-01"
+
+[vars]
+# Replace with your real GitHub Pages origin after deployment.
+# Example: "https://daniej50.github.io"
+ALLOWED_ORIGIN = "https://YOUR-GITHUB-USERNAME.github.io"
+
+# DO NOT put API secrets in this file.
+# Add NUTRITIONIX_APP_ID and NUTRITIONIX_APP_KEY as Worker secrets instead.
